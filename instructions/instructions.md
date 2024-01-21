@@ -1,31 +1,35 @@
-# Iris Inference Calculation Streamlit
+# Iris Inference Calculation with Streamlit
 
-Este proyecto muestra cómo crear tu propia app y ejecutarla con Streamlit para calcular la inferencia sobre tu dataset, en este caso, tratamos con un dataset de iris.
+This project demonstrates how to create and run your own app using Streamlit to calculate inferences on your dataset, specifically focusing on an iris dataset.
 
 ## Prerequisites
-- An environment for working with Python.
+- A Python-compatible working environment.
 - Internet connection.
-- OpenAI account with access to the GPT and DALL-E 3 APIs.
 
 ## Script Execution
-- Assuming Python and your environment are already installed, you will need to install openai:</br>
-· !pip install openai==0.28</br>
-· !pip install --upgrade openai</br>
+- Assuming Python and your environment are already installed, you will need to install pycaret:</br>
+· !pip install pycaret</br>
 
-- Import libraries:</br>
-· import streamlit as st
-· from pycaret.regression import load_model, predict_model 
-· import pandas as pd 
+- Import the required libraries:</br>
+· import streamlit as st</br>
+· from pycaret.regression import load_model, predict_model </br>
+· import pandas as pd</br>
+· from sklearn.datasets import load_iris</br>
 
-- Assign your API key to a variable:</br>
-· openai.api_key = "********" </br>
-· Make sure to replace the asterisks with your API key.
+- Execute the code blocks step-by-step in the streamlit_iris.ipynb file.</br>
 
-- In case of an error with the Windows CLI, reset the kernel and re-execute the command:</br>
-· !pip install openai==0.28
+- Open the console and navigate to the directory where your app.py is located. Then, execute it:</br>
+![Captura](https://github.com/DaaviidOC/Streamlit_Iris_Inference/blob/main/Files/Captura.PNG)</br>
 
-- In the script for making GPT queries, you can use "content": input(" "), to write queries in the input rather than in the code.
+- If successful, you should see a message like the one in the following image, providing a URL. (If it doesn't open automatically, click on the URL):</br>
+![Captura](https://github.com/DaaviidOC/Streamlit_Iris_Inference/blob/main/Files/Captura2.PNG)</br>
 
+- Once inside, you can input your data and perform inferential calculations:</br>
+![Captura](https://github.com/DaaviidOC/Streamlit_Iris_Inference/blob/main/Files/Captura4.PNG)</br>
+
+- When you click "Predict," if everything is functioning correctly, the following message should appear in your console:</br>
+  ![Captura](https://github.com/DaaviidOC/Streamlit_Iris_Inference/blob/main/Files/Captura3.PNG)</br>
+  
 ## Troubleshooting
-- If you encounter any errors during execution, make sure all libraries are up to date and that your OpenAI API key is correctly set up in the API_openai.ipynb file.
+- If you encounter any errors during execution, ensure that all libraries are up to date and that you have replaced the names of the model .pkl and the dataset with your own.
 
